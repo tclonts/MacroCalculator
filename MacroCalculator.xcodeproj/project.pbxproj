@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		BE8FE0232058247500E2BE3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8FE0222058247500E2BE3A /* AppDelegate.swift */; };
-		BE8FE0252058247500E2BE3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8FE0242058247500E2BE3A /* ViewController.swift */; };
 		BE8FE0282058247500E2BE3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE8FE0262058247500E2BE3A /* Main.storyboard */; };
 		BE8FE02A2058247500E2BE3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE8FE0292058247500E2BE3A /* Assets.xcassets */; };
 		BE8FE02D2058247500E2BE3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE8FE02B2058247500E2BE3A /* LaunchScreen.storyboard */; };
+		BE8FE05820586AF700E2BE3A /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8FE05720586AF700E2BE3A /* CalculatorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BE8FE01F2058247500E2BE3A /* MacroCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacroCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE8FE0222058247500E2BE3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BE8FE0242058247500E2BE3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BE8FE0272058247500E2BE3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE8FE0292058247500E2BE3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE8FE02C2058247500E2BE3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE8FE02E2058247500E2BE3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE8FE05720586AF700E2BE3A /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +54,22 @@
 		BE8FE0212058247500E2BE3A /* MacroCalculator */ = {
 			isa = PBXGroup;
 			children = (
-				BE8FE0222058247500E2BE3A /* AppDelegate.swift */,
-				BE8FE0242058247500E2BE3A /* ViewController.swift */,
 				BE8FE0262058247500E2BE3A /* Main.storyboard */,
+				BE8FE05720586AF700E2BE3A /* CalculatorViewController.swift */,
+				BE8FE0522058629200E2BE3A /* Resources */,
+			);
+			path = MacroCalculator;
+			sourceTree = "<group>";
+		};
+		BE8FE0522058629200E2BE3A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BE8FE0222058247500E2BE3A /* AppDelegate.swift */,
 				BE8FE0292058247500E2BE3A /* Assets.xcassets */,
 				BE8FE02B2058247500E2BE3A /* LaunchScreen.storyboard */,
 				BE8FE02E2058247500E2BE3A /* Info.plist */,
 			);
-			path = MacroCalculator;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE8FE0252058247500E2BE3A /* ViewController.swift in Sources */,
+				BE8FE05820586AF700E2BE3A /* CalculatorViewController.swift in Sources */,
 				BE8FE0232058247500E2BE3A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,7 +284,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XUF99SR6PQ;
-				INFOPLIST_FILE = MacroCalculator/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MacroCalculator/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TylerClonts.MacroCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -291,7 +299,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XUF99SR6PQ;
-				INFOPLIST_FILE = MacroCalculator/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MacroCalculator/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TylerClonts.MacroCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
